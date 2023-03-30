@@ -145,6 +145,10 @@ body {
 }
 
 .rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 2.45rem;
     text-align: center;
     background-color: var(--cor-rodape-header);
