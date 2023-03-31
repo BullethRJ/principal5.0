@@ -161,11 +161,13 @@ body {
 @media (max-width: 1000px) {
 
 .cabecalhoMenu {
+    padding: 2.35rem 1rem;
     justify-content: center;
 }
 
 .cabecalhoMenuLinks {
-    margin-left: 0;
+    font-size: 10px;
+    margin-left: 0.5rem;
     padding: 10% 0;
     text-align: center;
 }
@@ -205,6 +207,10 @@ body {
 .tiktok, .instagram, .twitter, .discord {
     margin: 1rem auto;
     width: 80%;
+}
+
+.rodape {
+    position: static;
 }
 
 }
