@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Orbitron:wght@500&family=Tilt+Warp&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #FFFFFF;
-    --cor-terciaria: #707070;
-    --cor-rodape-header: #050505;
-    --cor-hover: #121212;
+    --cor-primaria: #0F0F0F;
+    --cor-secundaria: #4CAF50;
+    --cor-terciaria: #00FF33;
+    --cor-rodape-header: #121212;
+    --cor-hover: #1F1F1F;
 
     --fonte-primaria: 'Orbitron', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -48,16 +48,8 @@ body {
     gap: 11px
 }
 
-.fotoMinha {
-    width: 35%;
-    margin-top: 100px;
-    border: solid 3px;
-    border-radius: 50%;
-    order: +1;
-    color: var(--cor-terciaria);
-}
-
 .sessao {
+    margin-right: 100px;
     width: 615px;
     display: flex;
     flex-direction: column;
@@ -65,13 +57,12 @@ body {
 }
 
 .titulo {
-    padding: auto;
-    font-size: 1.88rem;
+    font-size: 1.7rem;
     margin-bottom: 1.50rem;
     font-family: var(--fonte-primaria);
 }
 
-.primeira-strong {
+.destaque {
     color: var(--cor-terciaria);
 }
 
@@ -80,10 +71,37 @@ body {
     font-family: var(--fonte-secundaria);
 }
 
+.sobre-mim {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.sobre-mim:hover {
+    text-decoration: underline;
+    color: var(--cor-terciaria);
+}
+
+.mente{
+    font-family: var(--fonte-primaria);
+}
+
 .outros__paragrafos {
     font-size: 1.18rem;
     font-family: var(--fonte-secundaria);
     padding-bottom: 3.8%;
+}
+
+.gozada {
+    color: white;
+}
+
+.video-jhin {
+    width: 100%;
+    height: 360px;
+    display: block;
+    margin: 8px auto;
+    border: 2px solid var(--cor-terciaria);
+    box-shadow: 4px 4px 8px #4CAF50   ;
 }
 
 .titulo__redes__sociais {
@@ -92,7 +110,6 @@ body {
     padding-top: 2rem;
     margin-left: 3rem;
     font-family: var(--fonte-primaria);
-    color: var(--);
 }
 
 .tiktok, .instagram, .twitter, .discord {
@@ -139,13 +156,20 @@ body {
     width: 2rem;
 }
 
-.tiktok:hover, .instagram:hover, .twitter:hover, .discord:hover {
+.tiktok:hover, .instagram:hover, .discord:hover {
     background-color: var(--cor-hover);
     transform: scale(110%);
 }
 
-.rodape {
-    position: fixed;
+.fotoMinha {
+    padding: 50px;
+    border: solid 3px var(--cor-terciaria);
+    border-radius: 10%;
+    order: +1;
+    background-color: var(--cor-rodape-header);
+}
+
+footer {
     bottom: 0;
     left: 0;
     right: 0;
@@ -178,12 +202,8 @@ body {
     gap: 50px
  }
 
- .fotoMinha {
-    margin: 50px auto;
-    width: 70%;
- }
-
 .sessao {
+    margin-right: 0;
     width: 100%;
 }
 
@@ -209,8 +229,9 @@ body {
     width: 80%;
 }
 
-.rodape {
-    position: static;
-}
+.fotoMinha {
+    margin: 50px auto;
+    width: 70%;
+ }
 
 }
