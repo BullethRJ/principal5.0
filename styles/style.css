@@ -2,9 +2,9 @@
 
 :root {
     --cor-primaria: #0F0F0F;
-    --cor-secundaria: #4CAF50;
-    --cor-terciaria: #00FF33;
-    --cor-rodape-header: #121212;
+    --cor-secundaria: #005B41;
+    --cor-terciaria: #008170;
+    --cor-rodape-header: #232D3F;
     --cor-hover: #1F1F1F;
 
     --fonte-primaria: 'Orbitron', sans-serif;
@@ -41,130 +41,42 @@ body {
 }
 
 .principal {
-    padding: 2.4% 35% 5% 25%;
+    padding: 2.4% 35% 5% 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 11px
+    gap: 11px;
 }
 
 .sessao {
     margin-right: 100px;
-    width: 615px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
 .titulo {
+    color: var(--cor-terciaria);
     font-size: 1.7rem;
     margin-bottom: 1.50rem;
     font-family: var(--fonte-primaria);
 }
 
-.destaque {
-    color: var(--cor-terciaria);
-}
-
-.primeiro__paragrafo {
-    font-size: 1.55rem;
-    font-family: var(--fonte-secundaria);
-}
-
-.sobre-mim {
-    text-decoration: none;
-    color: var(--cor-terciaria);
-}
-
-.sobre-mim:hover {
-    text-decoration: underline;
-    color: var(--cor-terciaria);
-}
-
-.mente{
+.paragrafos {
+    font-size: 17px;
     font-family: var(--fonte-primaria);
-}
+    margin: 1px;
+} 
 
-.outros__paragrafos {
-    font-size: 1.18rem;
+.respostas {
     font-family: var(--fonte-secundaria);
-    padding-bottom: 3.8%;
-}
-
-.gozada {
-    color: white;
-}
-
-.video-jhin {
-    width: 100%;
-    height: 360px;
-    display: block;
-    margin: 8px auto;
-    border: 2px solid var(--cor-terciaria);
-    box-shadow: 4px 4px 8px #4CAF50   ;
-}
-
-.titulo__redes__sociais {
-    width: 100%;
-    font-weight: 1;
-    padding-top: 2rem;
-    margin-left: 3rem;
-    font-family: var(--fonte-primaria);
-}
-
-.tiktok, .instagram, .twitter, .discord {
-    display: block;
-    margin-top: 1.25rem;
-    padding: 1.34%;
-    width: 23rem;
-    text-align: center;
-    border-radius: 8px;
-    border: 2px groove var(--cor-terciaria);
-    background-color: var(--cor-primaria);
-    text-decoration: none;
-    font-family: var(--fonte-secundaria);
-    font-size: 1.50rem;
-    font-weight: 550;
-    color: var(--cor-secundaria);
-    transition: transform 0.5s ease-out;
-}
-  
-.fotoTwitter {
-    margin-right: 2%;
-    display: inline-block;
-    vertical-align: middle;
-    width: 1.50rem;
-}
-
-.fotoInsta {
-    margin-right: 2%;
-    display: inline-block;
-    vertical-align: middle;
-    width: 1.50rem;
-  }
-
-.fotoDiscord {
-    margin-right: 2%;
-    display: inline-block;
-    vertical-align: middle;
-    width: 1.50rem;
-}
-
-.fotoTiktok{
-    display: inline-block;
-    vertical-align: middle;
-    width: 2rem;
-}
-
-.tiktok:hover, .instagram:hover, .discord:hover {
-    background-color: var(--cor-hover);
-    transform: scale(110%);
 }
 
 .fotoMinha {
-    padding: 50px;
+    margin-top: 50px;
+    padding: 150px;
     border: solid 3px var(--cor-terciaria);
-    border-radius: 10%;
+    border-radius: 7%;
     order: +1;
     background-color: var(--cor-rodape-header);
 }
@@ -178,60 +90,57 @@ footer {
     background-color: var(--cor-rodape-header);
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    font-size: 1rem;
+    font-size: 17px;
     font-weight: 555;
 }
 
 @media (max-width: 1000px) {
+    .cabecalhoMenu {
+        padding: 2.35rem 1rem;
+        justify-content: center;
+    }
 
-.cabecalhoMenu {
-    padding: 2.35rem 1rem;
-    justify-content: center;
-}
+    .cabecalhoMenuLinks {
+        font-size: 15px;
+        margin-left: 0.5rem;
+        padding: 10% 0;
+        text-align: center;
+    }
 
-.cabecalhoMenuLinks {
-    font-size: 10px;
-    margin-left: 0.5rem;
-    padding: 10% 0;
-    text-align: center;
-}
+    .principal {
+        padding: 10% 15%;
+        flex-direction: column;
+        gap: 50px;
+    }
 
- .principal {
-    padding: 10% 15%;
-    flex-direction: column;
-    gap: 50px
- }
+    .sessao {
+        margin-right: 0;
+    }
 
-.sessao {
-    margin-right: 0;
-    width: 100%;
-}
+    .titulo {
+        width: 100%;
+        align-items: center;
+        padding: center;
+    }
 
- .titulo {
-    width: 100%;
-    align-items: center;
-    padding: center;
- }
+    .outros__paragrafos {
+        margin: 0.5rem;
+        font-size: 133%;
+    }
 
- .outros__paragrafos {
-    margin: 0.5rem;
-    font-size: 133%;
- }
+    .titulo__redes__sociais {
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
 
-.titulo__redes__sociais {
-    margin-left: 0;
-    margin-top: 1rem;
-    text-align: center;
-}
+    .tiktok, .instagram, .twitter, .discord {
+        margin: 1rem auto;
+        width: 80%;
+    }
 
-.tiktok, .instagram, .twitter, .discord {
-    margin: 1rem auto;
-    width: 80%;
-}
-
-.fotoMinha {
-    margin: 50px auto;
-    width: 70%;
- }
-
+    .fotoMinha {
+        margin: 50px auto;
+        width: 70%;
+    }
 }
